@@ -1,0 +1,46 @@
+Psudokoden:
+ //BestamDenKortasteVagen består av:
+ //användare ange hur många mellanstationer finns i zon 2 respektiv zon 3
+ m = antal mellanstationerna i zonen 2
+ n = antal mellanstationerna i zonen 3
+ //deklerara vektorer som motsvarar längder från mellanstationerna i varje zon
+ []a = [ m + 1]
+ [][]b = [ m + 1 ][ n + 1 ]
+ []c = [ n + 1 ]
+ //användare ska mata in vägsträkor mellan alla stationer
+ for(i to m)
+  a[i] = användare input
+
+   for(i to m)
+   { for (j to n)
+   {
+   b[i][j] = användare input
+   }
+   }
+
+   for(j to n)
+  c[j] = användare input
+
+
+  //DenKortasteVagen består av:
+
+ mellanstationer (a[], b[][] , c[])
+ {
+ //avstånd via mellanstationerna
+ minsta avstånd = a[1] + b[1][1]+ c[1]
+ for i = 1 to m
+ {
+    for j = 1 to n
+	{
+	    if (minsta avstånd > a[i] + b[i][j] + c[j])
+	    minsta avstånd = a[i] + b[i][j] + c[j]
+
+ 	}
+}
+
+return mellanstationerna;
+
+ //langd (a[], b[][] , c[])
+[] mellanstationer =  mellanstationerna(den första metoden i klassen DenKortasteVagen ) (a, b, c);
+lang = ( (a[mellanstationer[0]]) + (b[mellanstationer[0]][mellanstationer[1]])
+		+ (c[mellanstationer[1]]) );
